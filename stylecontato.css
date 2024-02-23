@@ -21,7 +21,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--cor-texto-principal);
-  background-color: #f7f7f7 ;
+  background-color: #f7f7f7;
 }
 
 /* Header */
@@ -41,13 +41,13 @@ header img {
 header h1 {
   color: #fff;
   font-size: 24px;
-  margin-left: 600px;
+  margin-left: 500px;
 }
 
 header p {
   color: #fff;
   font-size: 25px;
-  margin-left:  400px; ;
+  margin-left: 400px;
 }
 
 /* Main */
@@ -68,15 +68,14 @@ section h2 {
 
 /* Seção de contato */
 .contato {
-  
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .contato p {
-    font-size: 20px;
-    margin-bottom: 100px;
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 
 .contato form {
@@ -124,14 +123,11 @@ section h2 {
   background-color: var(--cor-bg-secundario);
 }
 
-
-
 /* Footer */
 footer {
-  background-color:  var(--cor-primaria) ;
+  background-color: var(--cor-primaria);
   padding: 20px 40px;
   text-align: center;
-  
 }
 
 footer p {
@@ -144,7 +140,6 @@ footer p {
 footer ul {
   list-style: none;
   padding: 0;
-  
 }
 
 footer ul li {
