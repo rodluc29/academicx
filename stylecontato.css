@@ -35,19 +35,19 @@ header {
 
 header img {
   width: 150px;
-  margin-left: 700px;
+  margin-left: 600px;
 }
 
 header h1 {
   color: #fff;
   font-size: 24px;
-  margin-left: 700px;
+  margin-left: 500px;
 }
 
 header p {
   color: #fff;
   font-size: 25px;
-  margin-left:  600px; ;
+  margin-left:  500px; ;
 }
 
 /* Main */
@@ -85,7 +85,7 @@ section h2 {
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.1);
-  margin-left: 600px;
+  margin-left: 500px;
 }
 
 .contato form label {
