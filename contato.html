@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACADEMICX - Entre em contato conosco</title>
+    <link rel="stylesheet" href="stylecontato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="logo1.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo1.jpg" alt="Logo ACADEMICX"></a>
+        <h1>ACADEMICX</h1>
+        <p>Ajude seus estudos a alcançar o sucesso!</p>
+    </header>
+    <main>
+        <section class="contato">
+            <h2>Entre em contato conosco</h2>
+            <p>Preencha o formulário abaixo para entrar em contato conosco. Responderemos o mais breve possível.</p>
+            <form action="https://formsubmit.co/contato@academicx.online" method="post" onsubmit="return validaForm()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <input type="submit" value="Enviar">
+
+                <input type="hidden" name="_subject" value="Novo Contato">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <script>
+                function validaForm() {
+                    const nome = document.getElementById('nome').value;
+                    const email = document.getElementById('email').value;
+                    const mensagem = document.getElementById('mensagem').value;
+
+                    // Validação do nome
+                    if (nome === '') {
+                        alert('O campo nome é obrigatório.');
+                        return false;
+                    }
+
+                    // Validação do email
+                    if (!validaEmail(email)) {
+                        alert('O campo email é inválido.');
+                        return false;
+                    }
+
+                    // Validação da mensagem
+                    if (mensagem === '') {
+                        alert('O campo mensagem é obrigatório.');
+                        return false;
+                    }
+
+                    // Retorna true se todos os campos forem válidos
+                    return true;
+                }
+
+                function validaEmail(email) {
+                    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return regex.test(email);
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>ACADEMICX © 2024 - Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://t.me/+553899276889" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+            <li><a href="https://wa.me/+553899276889" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
